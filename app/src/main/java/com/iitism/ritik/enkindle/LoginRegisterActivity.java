@@ -25,4 +25,10 @@ public class LoginRegisterActivity extends Activity {
         Intent intent = new Intent(LoginRegisterActivity.this,SignUpActivity.class);
         startActivity(intent);
     }
+
+    @Override
+    protected void onDestroy() {
+        finish();
+        super.onDestroy();
+    }
 }

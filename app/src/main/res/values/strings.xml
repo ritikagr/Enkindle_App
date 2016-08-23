@@ -19,4 +19,11 @@
     <string name="password_hint">Password</string>
     <string name="name_hint">Name</string>
     <string name="class_hint">Class</string>
+
+    <string-array name="class_array">
+        <item name="class_9">9th</item>
+        <item name="class_10">10th</item>
+        <item name="class_11">11th</item>
+        <item name="class_12">12th</item>
+    </string-array>
 </resources>
