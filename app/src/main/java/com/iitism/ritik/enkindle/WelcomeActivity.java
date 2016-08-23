@@ -98,7 +98,7 @@ public class WelcomeActivity extends Activity {
     private void launchHomeScreen()
     {
         prefManager.setFirstTimeLaunch(false);
-        Intent intent = new Intent(WelcomeActivity.this,MainActivity.class);
+        Intent intent = new Intent(WelcomeActivity.this,LoginRegisterActivity.class);
         startActivity(intent);
         finish();
     }

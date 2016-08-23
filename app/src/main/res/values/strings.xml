@@ -9,4 +9,7 @@
     <string name="slide_2_title">ASK A QUESTION</string>
     <string name="slide_3_title">REVIEW YOUR PERFORMANCE</string>
     <string name="slide_4_title">TAKE A TEST</string>
+
+    <string name="login_text">LOGIN</string>
+    <string name="signup_text">SIGNUP</string>
 </resources>
