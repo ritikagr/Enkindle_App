@@ -11,5 +11,12 @@
     <string name="slide_4_title">TAKE A TEST</string>
 
     <string name="login_text">LOGIN</string>
-    <string name="signup_text">SIGNUP</string>
+    <string name="register_text">REGISTER</string>
+    <string name="signin">Sign In</string>
+    <string name="register">Register</string>
+
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="name_hint">Name</string>
+    <string name="class_hint">Class</string>
 </resources>
