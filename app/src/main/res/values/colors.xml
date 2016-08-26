@@ -12,6 +12,7 @@
 <color name="login_registration_background">#20d2bb</color>
 <color name="login_background">#8cf9eb</color>
 <color name="pstel_matt">#ffdab5</color>
+<color name="held">#f0b2db</color>
 
 <!-- Screens background color-->
 <color name="bg_screen1">#f64c73</color>

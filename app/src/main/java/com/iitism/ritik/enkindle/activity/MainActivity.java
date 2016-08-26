@@ -84,7 +84,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void Ask_Question(View view)
     {
-
+        Intent intent = new Intent(this,AskActivity.class);
+        startActivity(intent);
     }
 
     public void Review(View view)

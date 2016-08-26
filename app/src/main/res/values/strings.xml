@@ -12,6 +12,11 @@
     <string name="test">TAKE A TEST</string>
     <string name="chat">CHAT</string>
     <string name="blog">BLOG</string>
+    <string name="search_question">Search For Question</string>
+    <string name="search">Search</string>
+    <string name="ask_question">Ask</string>
+    <string name="read_more">Read more</string>
+    <string name="question_title">Question</string>
 
     <string name="slide_1_title">CONSULT FOR MENTORSHIP</string>
     <string name="slide_2_title">ASK A QUESTION</string>
