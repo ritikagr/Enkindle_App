@@ -4,6 +4,14 @@
     <string name="skip">SKIP</string>
     <string name="next">NEXT</string>
     <string name="start">GOT IT</string>
+    <string name="logout">Logout</string>
+
+    <string name="consult">CONSULT FOR MENTORSHIP</string>
+    <string name="ask">ASK A QUESTION</string>
+    <string name="review">REVIEW YOUR PERFORMANCE</string>
+    <string name="test">TAKE A TEST</string>
+    <string name="chat">CHAT</string>
+    <string name="blog">BLOG</string>
 
     <string name="slide_1_title">CONSULT FOR MENTORSHIP</string>
     <string name="slide_2_title">ASK A QUESTION</string>
@@ -21,9 +29,10 @@
     <string name="class_hint">Class</string>
 
     <string-array name="class_array">
-        <item name="class_9">9th</item>
-        <item name="class_10">10th</item>
-        <item name="class_11">11th</item>
-        <item name="class_12">12th</item>
+        <item>Class</item>
+        <item>9th</item>
+        <item>10th</item>
+        <item>11th</item>
+        <item>12th</item>
     </string-array>
 </resources>

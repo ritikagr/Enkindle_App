@@ -1,4 +1,4 @@
-package com.iitism.ritik.enkindle;
+package com.iitism.ritik.enkindle.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

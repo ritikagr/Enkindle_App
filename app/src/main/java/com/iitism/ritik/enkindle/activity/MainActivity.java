@@ -1,5 +1,6 @@
-package com.iitism.ritik.enkindle;
+package com.iitism.ritik.enkindle.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,8 +11,14 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.iitism.ritik.enkindle.R;
+import com.iitism.ritik.enkindle.helper.SQLiteHandle;
+import com.iitism.ritik.enkindle.helper.SessionManager;
+
 public class MainActivity extends AppCompatActivity {
 
+    private SessionManager sessionManager;
+    private SQLiteHandle db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,14 +28,24 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setIcon(R.mipmap.enkindle_logo);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        db = new SQLiteHandle(getApplicationContext());
+        sessionManager = new SessionManager(getApplicationContext());
+
+        if(!sessionManager.isLoggedIn())
+        {
+            logoutUser();
+        }
+    }
+
+    public void logoutUser()
+    {
+        sessionManager.setLogin(false);
+        db.deleteUsers();
+
+        Intent intent = new Intent(MainActivity.this,LoginRegisterActivity.class);
+        startActivity(intent);
+
+        finish();
     }
 
     @Override
@@ -46,10 +63,47 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id)
+        {
+            case R.id.action_settings:
+                return true;
+            case R.id.logout:
+                logoutUser();
+                break;
+            default:
+                return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void Consult(View view)
+    {
+
+    }
+
+    public void Ask_Question(View view)
+    {
+
+    }
+
+    public void Review(View view)
+    {
+
+    }
+
+    public void Take_Test(View view)
+    {
+
+    }
+
+    public void Chat(View view)
+    {
+
+    }
+
+    public void Blog(View view)
+    {
+
     }
 }

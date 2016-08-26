@@ -4,12 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/login_background"
-    tools:context="com.iitism.ritik.enkindle.LoginActivity">
+    tools:context=".activity.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:id="@+id/info"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true">
 
@@ -19,21 +20,34 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:hint="@string/name_hint"
+            android:id="@+id/register_name"
             android:background="@android:color/white"
             android:padding="8dp"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
 
-        <AutoCompleteTextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:hint="@string/class_hint"
+            android:background="@android:color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="8dp"
-            android:id="@+id/class_array"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:id="@+id/classes"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/class_spinner"></Spinner>
+        </LinearLayout>
 
         <EditText
             android:layout_width="match_parent"
@@ -44,6 +58,7 @@
             android:inputType="textEmailAddress"
             android:background="@android:color/white"
             android:padding="8dp"
+            android:id="@+id/register_email"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
 
@@ -55,6 +70,7 @@
             android:hint="@string/password_hint"
             android:background="@android:color/white"
             android:padding="8dp"
+            android:id="@+id/register_password"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:inputType="textPassword"
             android:password="true"

@@ -1,16 +1,13 @@
-package com.iitism.ritik.enkindle;
+package com.iitism.ritik.enkindle.activity;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.ObbInfo;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +16,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.iitism.ritik.enkindle.R;
 
 public class WelcomeActivity extends Activity {
 
