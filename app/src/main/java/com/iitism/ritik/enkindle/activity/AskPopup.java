@@ -25,7 +25,6 @@ public class AskPopup extends Activity {
 
     private static final int SELECT_IMAGE_REQUEST_CODE = 1;
     private TextView filePath;
-    private Bitmap imageBitmap;
     private ImageView mSelectedImageView;
     private String fileUri;
     private TextView attachFile;
@@ -97,7 +96,7 @@ public class AskPopup extends Activity {
                     filePath.setText(picturePath);
                     cursor.close();
 
-                    imageBitmap = BitmapFactory.decodeFile(picturePath);
+                    Bitmap imageBitmap = BitmapFactory.decodeFile(picturePath);
                     mSelectedImageView.setImageBitmap(imageBitmap);
                 }
             }

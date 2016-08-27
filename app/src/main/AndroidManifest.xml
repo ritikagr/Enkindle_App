@@ -33,16 +33,10 @@
         <activity
             android:name=".activity.LoginActivity"
             android:label="@string/signin">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.LoginRegisterActivity" />
         </activity>
         <activity
             android:name=".activity.SignUpActivity"
             android:label="@string/register">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.LoginRegisterActivity" />
         </activity>
         <activity
             android:name=".activity.MainActivity"
