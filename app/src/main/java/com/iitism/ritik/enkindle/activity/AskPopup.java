@@ -28,6 +28,7 @@ public class AskPopup extends Activity {
     private Bitmap imageBitmap;
     private ImageView mSelectedImageView;
     private String fileUri;
+    private TextView attachFile;
 
     private EditText question;
     @Override
@@ -47,9 +48,17 @@ public class AskPopup extends Activity {
         question = (EditText) findViewById(R.id.enter_question);
         filePath = (TextView) findViewById(R.id.attach_file_path);
         mSelectedImageView = (ImageView) findViewById(R.id.selected_image);
+        attachFile = (TextView) findViewById(R.id.attach_file);
+
+        attachFile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Attach_File();
+            }
+        });
     }
 
-    public void Attach_File(View view)
+    public void Attach_File()
     {
         Intent pickIntent = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         pickIntent.setType("image/*");
@@ -68,21 +77,13 @@ public class AskPopup extends Activity {
         {
             if(resultCode==RESULT_OK && null!=data)
             {
-                final boolean isCamera;
+                Uri selectedImage = data.getData();
 
-                String Action = data.getAction();
-                if(Action==MediaStore.ACTION_IMAGE_CAPTURE)
-                    isCamera=true;
-                else
-                isCamera = false;
-
-                if(isCamera) {
+                if(selectedImage==null) {
                     Bitmap bitmap = (Bitmap) data.getExtras().get("data");
                     mSelectedImageView.setImageBitmap(bitmap);
-                    return;
                 }
                 else {
-                    Uri selectedImage = data.getData();
                     String[] filePathColumn = {MediaStore.Images.Media.DATA};
 
                     Cursor cursor = getContentResolver().query(selectedImage, filePathColumn, null, null, null);

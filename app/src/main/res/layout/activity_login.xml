@@ -14,30 +14,17 @@
         android:layout_centerVertical="true">
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
             android:hint="@string/email_hint"
             android:id="@+id/login_email"
-            android:background="@android:color/white"
-            android:padding="8dp"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+            android:inputType="textEmailAddress"
+            style="@style/activity_login_edittext"></EditText>
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
             android:hint="@string/password_hint"
             android:id="@+id/login_password"
-            android:background="@android:color/white"
-            android:padding="8dp"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:singleLine="true"
             android:password="true"
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+            style="@style/activity_login_edittext"></EditText>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,16 +34,12 @@
             android:layout_marginTop="32dp">
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                style="@style/activity_login_button"
                 android:text="@string/login_text"
                 android:id="@+id/login_button"
                 android:onClick="Login"
                 android:textColor="@android:color/white"
                 android:textAlignment="center"
-                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:background="@color/colorAccent"/>
         </LinearLayout>
 

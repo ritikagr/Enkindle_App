@@ -26,25 +26,17 @@
         android:background="@android:color/white"></View>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/activity_welcome_button"
         android:id="@+id/btn_skip"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:text="@string/skip"
-        android:background="@null"
-        android:textColor="@android:color/white"
+        android:layout_alignParentLeft="true"
         android:onClick="onSkip"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/activity_welcome_button"
         android:id="@+id/btn_next"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:text="@string/next"
-        android:background="@null"
-        android:textColor="@android:color/white"
+        android:layout_alignParentRight="true"
         android:onClick="onNext"/>
 
 </RelativeLayout>

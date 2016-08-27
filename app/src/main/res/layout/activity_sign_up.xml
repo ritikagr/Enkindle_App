@@ -15,16 +15,9 @@
         android:layout_centerVertical="true">
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
             android:hint="@string/name_hint"
             android:id="@+id/register_name"
-            android:background="@android:color/white"
-            android:singleLine="true"
-            android:padding="8dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+            style="@style/activity_login_edittext.activity_signup_edittext"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -52,33 +45,18 @@
         </LinearLayout>
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+            style="@style/activity_login_edittext.activity_signup_edittext"
             android:hint="@string/email_hint"
             android:inputType="textEmailAddress"
-            android:background="@android:color/white"
-            android:padding="8dp"
-            android:singleLine="true"
             android:id="@+id/register_email"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+            style="@style/activity_login_edittext.activity_signup_edittext"
             android:hint="@string/password_hint"
-            android:background="@android:color/white"
-            android:padding="8dp"
-            android:singleLine="true"
             android:id="@+id/register_password"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:inputType="textPassword"
-            android:password="true"
-            android:textAppearance="?android:attr/textAppearanceLarge"/>
+            android:inputType="textPassword"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -88,15 +66,11 @@
             android:layout_marginTop="32dp">
 
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                style="@style/activity_login_button.activity_signup_button"
                 android:text="@string/register"
                 android:onClick="Register"
                 android:textColor="@android:color/white"
                 android:textAlignment="center"
-                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:background="@color/colorAccent"/>
         </LinearLayout>
 

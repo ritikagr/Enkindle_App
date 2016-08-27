@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Attach file (.jpg)"
-            android:onClick="Attach_File"
+            android:id="@+id/attach_file"
             android:layout_margin="8dp"
             android:textAppearance="?android:attr/textAppearanceMedium"/>
 

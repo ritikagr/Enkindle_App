@@ -28,4 +28,35 @@
         <item name="android:windowBackground">@drawable/background_splash</item>
     </style>
 
+    <style name="activity_login_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="activity_login_edittext.activity_signup_edittext"></style>
+
+    <style name="activity_login_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="activity_login_button.activity_signup_button"></style>
+
+    <style name="activity_welcome_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
 </resources>
