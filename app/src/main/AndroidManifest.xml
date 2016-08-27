@@ -23,8 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.WelcomeActivity" />
-        <activity android:name=".activity.LoginRegisterActivity" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".activity.LoginRegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".activity.LoginActivity"
             android:label="@string/signin">
@@ -41,8 +46,7 @@
         </activity>
         <activity
             android:name=".activity.MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/app_name"/>
         <activity
             android:name=".activity.AskActivity"
             android:label="@string/ask">
@@ -52,11 +56,10 @@
         </activity>
         <activity
             android:name=".activity.PopupWindowSolution"
-            android:theme="@style/AppTheme.PopWindowTheme" />
+            android:theme="@style/AppTheme.NoActionBar.PopWindowTheme" />
         <activity
             android:name=".activity.AskPopup"
-            android:theme="@style/AppTheme.PopWindowTheme"
-            android:configChanges="orientation|screenSize|keyboardHidden">
+            android:theme="@style/AppTheme.NoActionBar.PopWindowTheme">
         </activity>
     </application>
 
