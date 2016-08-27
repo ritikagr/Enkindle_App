@@ -173,4 +173,11 @@ public class SignUpActivity extends AppCompatActivity implements AdapterView.OnI
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
+    public void LinkToLogin(View view)
+    {
+        Intent intent = new Intent(SignUpActivity.this,LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

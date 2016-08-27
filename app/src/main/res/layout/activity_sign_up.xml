@@ -61,7 +61,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:id="@+id/login"
             android:layout_marginTop="32dp">
 
@@ -72,6 +72,15 @@
                 android:textColor="@android:color/white"
                 android:textAlignment="center"
                 android:background="@color/colorAccent"/>
+
+            <TextView
+                style="@style/activity_login_button"
+                android:layout_marginTop="32dp"
+                android:onClick="LinkToLogin"
+                android:id="@+id/already_registered"
+                android:textAlignment="center"
+                android:text="@string/already_registered"
+                />
         </LinearLayout>
 
     </LinearLayout>

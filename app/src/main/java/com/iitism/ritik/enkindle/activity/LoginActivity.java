@@ -143,4 +143,11 @@ public class LoginActivity extends AppCompatActivity {
         if(pd.isShowing())
             pd.dismiss();
     }
+
+    public void LinkToRegister(View view)
+    {
+        Intent intent = new Intent(LoginActivity.this,SignUpActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

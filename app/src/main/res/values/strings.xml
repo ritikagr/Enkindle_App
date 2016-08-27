@@ -17,6 +17,9 @@
     <string name="ask_question">Ask</string>
     <string name="read_more">Read more</string>
     <string name="question_title">Question</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="not_a_member_signup">Not a member? Sign up now.</string>
+    <string name="already_registered">Already registered! Login me.</string>
 
     <string name="slide_1_title">CONSULT FOR MENTORSHIP</string>
     <string name="slide_2_title">ASK A QUESTION</string>

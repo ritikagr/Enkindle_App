@@ -7,9 +7,20 @@
     tools:context=".activity.LoginActivity">
 
     <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_logo"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@mipmap/enkindle_logo"></LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_below="@id/login_logo"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true">
 
@@ -26,12 +37,19 @@
             android:password="true"
             style="@style/activity_login_edittext"></EditText>
 
+        <TextView
+            style="@style/activity_login_button"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:id="@+id/forgot_password"
+            android:text="@string/forgot_password"
+            />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:id="@+id/login"
-            android:layout_marginTop="32dp">
+            android:layout_marginTop="16dp">
 
             <Button
                 style="@style/activity_login_button"
@@ -41,6 +59,15 @@
                 android:textColor="@android:color/white"
                 android:textAlignment="center"
                 android:background="@color/colorAccent"/>
+
+            <TextView
+                style="@style/activity_login_button"
+                android:layout_marginTop="32dp"
+                android:onClick="LinkToRegister"
+                android:id="@+id/not_a_member_signup"
+                android:textAlignment="center"
+                android:text="@string/not_a_member_signup"
+                />
         </LinearLayout>
 
     </LinearLayout>
