@@ -3,6 +3,9 @@
     package="com.iitism.ritik.enkindle">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
 
     <application
         android:name=".app.AppController"
@@ -47,7 +50,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.MainActivity" />
         </activity>
-        <activity android:name=".activity.PopupWindowSolution"></activity>
+        <activity
+            android:name=".activity.PopupWindowSolution"
+            android:theme="@style/AppTheme.PopWindowTheme" />
+        <activity
+            android:name=".activity.AskPopup"
+            android:theme="@style/AppTheme.PopWindowTheme"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
     </application>
 
 </manifest>

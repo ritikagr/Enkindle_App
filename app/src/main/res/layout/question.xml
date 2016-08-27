@@ -3,14 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/question_title"
-        android:id="@+id/question_title"
-        android:textAlignment="center"/>
+    android:layout_height="match_parent"
+    android:background="@drawable/border1">
 
     <TextView
         android:layout_width="match_parent"
@@ -25,7 +19,6 @@
         android:layout_height="wrap_content"
         android:text="@string/read_more"
         android:id="@+id/read_more"
-        android:onClick="ReadMore"
         android:textAlignment="center"/>
 
 </LinearLayout>

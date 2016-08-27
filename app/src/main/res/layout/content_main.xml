@@ -15,64 +15,64 @@
         android:layout_weight="3"
         android:layout_marginTop="@dimen/activity_vertical_margin">
 
-        <GridLayout
+        <android.support.v7.widget.GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:rowCount="2"
-            android:columnCount="2"
-            android:orientation="horizontal"
+            app:rowCount="2"
+            app:columnCount="2"
+            app:orientation="horizontal"
             android:id="@+id/grid_layout"
-            android:columnOrderPreserved="true">
+            app:columnOrderPreserved="true">
 
             <TextView
                 android:id="@+id/consult"
-                android:layout_rowWeight="1"
+                app:layout_rowWeight="1"
                 android:layout_width="0dp"
-                android:layout_columnWeight="1"
+                app:layout_columnWeight="1"
                 android:text="@string/consult"
                 android:gravity="center"
                 android:textAlignment="center"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:background="@color/bg_screen1"
-                android:layout_gravity="fill"
+                app:layout_gravity="fill"
                 android:onClick="Consult"/>
             <TextView
-                android:layout_rowWeight="1"
+                app:layout_rowWeight="1"
                 android:layout_width="0dp"
-                android:layout_columnWeight="1"
+                app:layout_columnWeight="1"
                 android:text="@string/ask"
                 android:id="@+id/ask"
                 android:gravity="center"
                 android:textAlignment="center"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:background="@color/bg_screen2"
-                android:layout_gravity="fill"
+                app:layout_gravity="fill"
                 android:onClick="Ask_Question"/>
             <TextView
                 android:text="@string/review"
-                android:layout_rowWeight="1"
+                app:layout_rowWeight="1"
                 android:layout_width="0dp"
-                android:layout_columnWeight="1"
+                app:layout_columnWeight="1"
                 android:gravity="center"
                 android:textAlignment="center"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:id="@+id/review"
                 android:background="@color/bg_screen3"
-                android:layout_gravity="fill"
+                app:layout_gravity="fill"
                 android:onClick="Review"/>
             <TextView
-                android:layout_rowWeight="1"
+                app:layout_rowWeight="1"
                 android:layout_width="0dp"
-                android:layout_columnWeight="1"
+                app:layout_columnWeight="1"
                 android:gravity="center"
                 android:textAlignment="center"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/test"
                 android:id="@+id/test"
                 android:background="@color/bg_screen4"
-                android:layout_gravity="fill"
+                app:layout_gravity="fill"
                 android:onClick="Take_Test"/>
-        </GridLayout>
+        </android.support.v7.widget.GridLayout>
 
         <Button
             android:layout_width="wrap_content"
