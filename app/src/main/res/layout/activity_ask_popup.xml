@@ -8,10 +8,7 @@
     tools:context="com.iitism.ritik.enkindle.activity.AskPopup">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:padding="8dp"
+        style="@style/popup_window_solution_style"
         android:text="Write your question"
         android:textStyle="bold"
         android:textAppearance="?android:attr/textAppearanceMedium"/>
