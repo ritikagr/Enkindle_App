@@ -1,0 +1,8 @@
+title: Enkindle app
+description: Project Assignment for Enkindle Internship
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-merlot
+
+gems:
+  - jekyll-mentions
